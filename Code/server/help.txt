@@ -1,0 +1,23 @@
+214
+
+USER [name], Its argument is used to specify the user's string. It is used for user authentication
+
+PASS [password], Its argument is used to specify the user's password. It is used for user authentication
+
+PWD , It is used for display user's current directory
+
+MKD [directory path] , Its argument is used to specify the path of directory. It is used for making new directory
+
+DELE -d [directory path], Its argument is used to specify the path of directory. It is used for deleting existing directory
+
+QUIT , It is used for quit from ftp server
+
+HELP, It is used for displaying commands help
+
+LS , It is used for display list of files and directories in current directory
+
+CWD [path] , Its argument is used to specify the path of destination directory. It is used for change current directory
+
+RENAME [from] [to], Its arguments is used to specify the old_name[from] and new_name[to]. It is used for change a file name
+
+RETR [name], Its argument is used to specify the name of file. It is used for downloding a file
