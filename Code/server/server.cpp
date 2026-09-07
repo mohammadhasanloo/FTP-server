@@ -62,7 +62,7 @@ void Server::bind_sockets()
     command_address.sin_family = AF_INET;
     command_address.sin_addr.s_addr = INADDR_ANY;
     command_address.sin_port = htons(port_cmd_channel);
-    if (bind(cmd_sock, (struct sockaddr*)&command_address, sizeof(command_address)) < 0)
+    if (::bind(cmd_sock, (struct sockaddr*)&command_address, sizeof(command_address)) < 0)
     {
         cout << BINDING_SOCKET_FAILED << endl;
         exit(0);
@@ -71,7 +71,7 @@ void Server::bind_sockets()
     data_address.sin_family = AF_INET;
     data_address.sin_addr.s_addr = INADDR_ANY;
     data_address.sin_port = htons(port_dchannell);
-    if (bind(data_sock, (struct sockaddr*)&data_address, sizeof(data_address)) < 0)
+    if (::bind(data_sock, (struct sockaddr*)&data_address, sizeof(data_address)) < 0)
     {
         cout << BINDING_SOCKET_FAILED << endl;
         exit(0);

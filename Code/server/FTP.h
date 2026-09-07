@@ -10,7 +10,13 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include <bits/stdc++.h>
+#include <cstring>
+#include <fstream>
+#include <iostream>
+#include <map>
+#include <sstream>
+#include <string>
+#include <vector>
 #include <netinet/in.h> 
 #include <arpa/inet.h> 
 #include <unistd.h> 

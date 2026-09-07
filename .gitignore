@@ -1,0 +1,9 @@
+*.o
+*.out
+*.gch
+*.pch
+*.dSYM/
+.DS_Store
+log.txt
+renamed_file.txt
+Code/client/downloads/

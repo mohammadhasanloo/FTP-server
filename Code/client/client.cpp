@@ -110,10 +110,9 @@ void Client::username_update(short req_type, char res[], vector<string> request_
 
     switch(req_type){
         case 1:
+            // On a rejected username the stored one is left as it was.
             if(stoi(res_splitted[0]) == CORRECT_USR_CODE)
                 username = request_params[1];
-            else
-                username = username;
             break;
         case 2:
             if(stoi(res_splitted[0]) == CORRECT_PASS_CODE){
